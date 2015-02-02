@@ -28,17 +28,17 @@ public class KnockKnockServer {
             String inputLine, outputLine;
 
             // Initiate conversation with client
-/*            KnockKnockProtocol kkp = new KnockKnockProtocol();
+            KnockKnockProtocol kkp = new KnockKnockProtocol();
             outputLine = kkp.processInput(null);
-            out.println(outputLine);*/
+            out.println(outputLine);
 
-/*            while ((inputLine = in.readLine()) != null) {
+            while ((inputLine = in.readLine()) != null) {
                 outputLine = kkp.processInput(inputLine);
                 out.println(outputLine);
                 System.out.println(inputLine);
                 if (outputLine.equals("Bye."))
                     break;
-            }*/
+            }
 
             while ((inputLine = in.readLine()) != null) {
 
