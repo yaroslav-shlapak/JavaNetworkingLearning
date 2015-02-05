@@ -4,8 +4,6 @@ import junit.framework.Assert;
 import org.junit.Before;
 
 public class ClientServerTest {
-    String hostName;
-    int port;
     Client client;
     Server server;
     LightControlJson lightControlJson;
