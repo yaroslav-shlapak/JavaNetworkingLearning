@@ -1,5 +1,9 @@
 package tcpclientserver;
 
+import org.omg.CORBA.*;
+
+import java.lang.Object;
+
 /**
  * Created by y.shlapak on Feb 02, 2015.
  */
@@ -31,4 +35,18 @@ public class LightControlJson {
     LightControlJson() {
 
     }
+
+    @Override
+    public boolean equals(Object object) {
+        LightControlJson obj = (LightControlJson) object;
+        if(obj.lightEnabled == this.lightEnabled && obj.lightLevel == this.lightLevel) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
+
 }

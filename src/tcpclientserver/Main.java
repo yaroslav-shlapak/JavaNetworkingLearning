@@ -13,9 +13,5 @@ public class Main {
         Client client = new Client(hostName, port);
         Server server = new Server(port);
 
-        server.send();
-        client.send();
-        client.receive();
-
     }
 }
