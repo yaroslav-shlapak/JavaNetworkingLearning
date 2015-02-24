@@ -8,10 +8,15 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        String hostName = "localhost";
-        int port = 4444;
-        Client client = new Client(hostName, port);
+        String hostName = "192.168.0.103";
+        int port = 1234;
         Server server = new Server(port);
+
+        while(true) {
+            server.receive();
+            System.out.println(server.getLightControlJson().getLightLevel());
+            System.out.println(server.getLightControlJson().isLightEnabled());
+        }
 
     }
 }
